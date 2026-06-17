@@ -1,0 +1,64 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "",
+    "tsconfig.json": "",
+    "*.tsx": "${capture}.content.ts",
+    "*.ts": "${capture}.content.ts"
+  },
+  "search.exclude": {
+    "**/.next/**": true,
+    "pnpm-lock.yaml": true,
+    "**/.turbo/**": true,
+    "**/node_modules/**": true,
+    "**/.agents/**": true,
+    "**/..claude/**": true,
+    "**/.git": true,
+    "**/.sst": true,
+    "**/dist": true,
+    "**/.intlayer": true,
+    "**/next-env.d.ts": true,
+    "**/.output": true,
+    "**/.tanstack": true
+  },
+  "files.exclude": {
+    "**/.next/**": true,
+    "**/.turbo/**": true,
+    "**/node_modules/**": true,
+    "**/next-env.d.ts": true,
+    "**/.git": true,
+    "**/.sst": true,
+    "**/dist": true,
+    "**/.intlayer": true,
+    "**/.output": true,
+    "**/.tanstack": true
+  },
+  "files.watcherExclude": {
+    "**/.next/**": true,
+    "**/.turbo/**": true,
+    "**/node_modules/**": true,
+    "**/.git": true,
+    "**/.sst": true,
+    "**/dist": true,
+    "**/.intlayer": true,
+    "**/next-env.d.ts": true,
+    "**/.output": true,
+    "**/.tanstack": true
+  },
+  "explorer.compactFolders": false,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit"
+  },
+  "js/ts.tsserver.maxMemory": 4096,
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+  "js/ts.preferences.preferTypeOnlyAutoImports": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
+}
