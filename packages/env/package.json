@@ -1,0 +1,26 @@
+{
+    "name": "@workspace/env",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "lint": "biome lint",
+        "format": "biome format",
+        "check": "biome check",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "zod": "^4.4.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.19.41",
+        "@workspace/biome-config": "workspace:*",
+        "@workspace/typescript-config": "workspace:*",
+        "typescript": "^6.0.3"
+    },
+    "exports": {
+        "./parse": "./src/parse.ts",
+        "./client": "./src/client.ts",
+        "./server": "./src/server.ts"
+    }
+}
