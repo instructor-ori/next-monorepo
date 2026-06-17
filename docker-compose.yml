@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres_mono
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: local
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: mailpit_mono
+    restart: always
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+volumes:
+  pg_data:
