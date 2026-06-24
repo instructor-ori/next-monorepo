@@ -1,3 +1,4 @@
+import * as schema from "@workspace/database/core.schema";
 import { env } from "@workspace/env/server";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -10,4 +11,4 @@ const pool = new Pool({
   port: env.DATABASE_PORT,
 });
 
-export const db = drizzle({ client: pool });
+export const db = drizzle({ client: pool, schema });
