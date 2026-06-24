@@ -3,11 +3,17 @@
     "version": "0.0.0",
     "type": "module",
     "private": true,
-    "scripts": {},
+    "scripts": {
+        "lint": "biome lint",
+        "format": "biome format",
+        "check": "biome check",
+        "typecheck": "tsc --noEmit",
+        "dev": "email dev --dir ./src/templates --port 4000"
+    },
     "dependencies": {
         "@react-email/render": "^2.0.9",
         "@react-email/ui": "^6.6.4",
-        "nodemailer": "^9.0.1",
+        "nodemailer": "^8.0.1",
         "react": "19.2.4",
         "react-dom": "19.2.4",
         "@workspace/env": "workspace:*"
@@ -22,5 +28,9 @@
         "typescript": "^6.0.3",
         "@workspace/biome-config": "workspace:*",
         "@workspace/typescript-config": "workspace:*"
+    },
+    "exports": {
+        ".": "./src/index.ts",
+        "./templates/*": "./src/templates/*.tsx"
     }
 }
