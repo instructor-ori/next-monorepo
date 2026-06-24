@@ -1,0 +1,26 @@
+{
+    "name": "@workspace/email",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {},
+    "dependencies": {
+        "@react-email/render": "^2.0.9",
+        "@react-email/ui": "^6.6.4",
+        "nodemailer": "^9.0.1",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+        "@workspace/env": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/node": "^26.0.0",
+        "@types/nodemailer": "^8.0.1",
+        "@types/react": "^19.2.15",
+        "@types/react-dom": "^19.2.3",
+        "react-email": "^6.6.4",
+        "tailwindcss": "^4.3.0",
+        "typescript": "^6.0.3",
+        "@workspace/biome-config": "workspace:*",
+        "@workspace/typescript-config": "workspace:*"
+    }
+}
