@@ -5,5 +5,7 @@
     "paths": {
       "@workspace/env/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
 }

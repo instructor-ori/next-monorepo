@@ -15,6 +15,9 @@ const ServerEnvSchema = z.object({
 
   MAILPIT_HOST: z.string().default("localhost"),
   MAILPIT_PORT: z.coerce.number().default(1025),
+
+  BETTER_AUTH_URL: z.url().default("http://localhost:3000"),
+  BETTER_AUTH_SECRET: z.string(),
 });
 
 export type ServerEnv = z.infer<typeof ServerEnvSchema>;
