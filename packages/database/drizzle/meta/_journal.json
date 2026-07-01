@@ -8,6 +8,13 @@
       "when": 1781725498238,
       "tag": "0000_secret_nova",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1782928074530,
+      "tag": "0001_nifty_thundra",
+      "breakpoints": true
     }
   ]
 }
