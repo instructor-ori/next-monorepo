@@ -27,10 +27,13 @@ export async function sendMail<K extends TemplateKey>({
   options,
 }: {
   templateKey: K;
-  props: TemplateProps<K>;
+  props: React.ComponentProps<(typeof Templates)[K]>;
   options: SendMailOptions;
 }) {
-  const element = React.createElement(Templates[templateKey], props);
+  const element = React.createElement(
+    Templates[templateKey] as React.ComponentType<TemplateProps<K>>,
+    props as TemplateProps<K> & React.Attributes,
+  );
   const html = await render(element);
   const text = toPlainText(html);
 
