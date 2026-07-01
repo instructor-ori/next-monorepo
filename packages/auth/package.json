@@ -1,0 +1,30 @@
+{
+    "name": "@workspace/auth",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "lint": "biome lint",
+        "format": "biome format",
+        "check": "biome check",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@better-auth/passkey": "^1.6.18",
+        "better-auth": "^1.6.18",
+        "zod": "^4.4.3",
+        "@workspace/env": "workspace:*",
+        "@workspace/email": "workspace:*",
+        "@workspace/database": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^6.0.3",
+        "@workspace/biome-config": "workspace:*",
+        "@workspace/typescript-config": "workspace:*"
+    },
+    "exports": {
+        "./*": "./src/*.ts",
+        "./lib/*": "./src/lib/*.ts",
+        "./plugins/*": "./src/plugins/*.ts"
+    }
+}
