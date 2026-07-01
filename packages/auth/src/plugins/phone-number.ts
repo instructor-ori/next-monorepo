@@ -1,6 +1,6 @@
-import { phoneNumber } from "better-auth/plugins";
+import { phoneNumber as phoneNumberPlugin } from "better-auth/plugins";
 
-export const phoneNumberPlugin = phoneNumber({
+export const phoneNumber = phoneNumberPlugin({
   requireVerification: true,
   expiresIn: 60 * 15,
   otpLength: 6,

@@ -1,3 +1,3 @@
-import { openAPI } from "better-auth/plugins";
+import { openAPI as openAPIPlugin } from "better-auth/plugins";
 
-export const openAPIPlugin = openAPI({ disableDefaultReference: true });
+export const openAPI = openAPIPlugin({ disableDefaultReference: true });

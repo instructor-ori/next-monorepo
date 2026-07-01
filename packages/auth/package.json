@@ -11,16 +11,19 @@
     },
     "dependencies": {
         "@better-auth/passkey": "^1.6.18",
-        "better-auth": "^1.6.18",
-        "zod": "^4.4.3",
-        "@workspace/env": "workspace:*",
+        "@simplewebauthn/server": "^13.3.2",
+        "@workspace/database": "workspace:*",
         "@workspace/email": "workspace:*",
-        "@workspace/database": "workspace:*"
+        "@workspace/env": "workspace:*",
+        "better-auth": "^1.6.18",
+        "i": "^0.3.7",
+        "npm": "^11.18.0",
+        "zod": "^4.4.3"
     },
     "devDependencies": {
-        "typescript": "^6.0.3",
         "@workspace/biome-config": "workspace:*",
-        "@workspace/typescript-config": "workspace:*"
+        "@workspace/typescript-config": "workspace:*",
+        "typescript": "^6.0.3"
     },
     "exports": {
         "./*": "./src/*.ts",

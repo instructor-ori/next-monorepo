@@ -1,3 +1,3 @@
-import { admin } from "better-auth/plugins";
+import { admin as adminPlugin } from "better-auth/plugins";
 
-export const adminPlugin = admin();
+export const admin = adminPlugin();
